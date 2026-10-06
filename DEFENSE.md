@@ -12,8 +12,9 @@
 
 3. Модель дозволяла зберігати історію багатьох `Loan` для однієї книги, але специфікація не визначала обмеження активної видачі. Додано правило: книга може мати багато видач у різний час, але не більше однієї активної видачі одночасно.
 
-Виправлення зафіксовані комітом `docs: refine acceptance criteria after ER audit`, після чого ER-модель узгоджено комітом `fix: align ER model with refined specification`.
+Розбіжності були виявлені під час AI-аудиту за промптом `ai/03-er-audit-prompt.md`, а результат аудиту зафіксовано в `ai/03-er-audit-result.md`.
 
+На основі аудиту спочатку було уточнено критерії в `spec.md` комітом `docs: refine acceptance criteria after ER audit`. Після цього AI отримав фідбек через `ai/04-er-refinement-prompt.md`, а ER-модель була узгоджена з оновленою специфікацією комітом `fix: align ER model with refined specification`.
 ## Ключове рішення
 
 Ключове рішення описано в `adr/0001-model-loan-as-entity.md`.
